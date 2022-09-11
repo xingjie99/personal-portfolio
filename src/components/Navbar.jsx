@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
-import aws from "../assets/aws.png";
+import Resume from "../assets/Tan Xing Jie - CV.pdf";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -91,6 +91,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/tan-xing-jie-344268220/"
+              target="_blank"
             >
               <FaLinkedin size={30} />
               Linkedin
@@ -100,6 +101,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://github.com/xingjie99"
+              target="_blank"
             >
               <FaGithub size={30} />
               Github
@@ -108,7 +110,7 @@ const Navbar = () => {
           <li className="w-[150px] h-[60px] flex mr-[-90px] hover:ml-[-90px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href={aws}
+              href={Resume}
               download
             >
               <BsFillPersonLinesFill size={30} />

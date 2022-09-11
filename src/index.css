@@ -41,19 +41,23 @@
 }
 
 @keyframes run {
-  0% {
-    left: 0;
+  from {
+    transform: translate(0);
   }
   50% {
-    left: calc(100% - 100px);
+    transform: translate(40%);
   }
-  100% {
-    left: 0;
+  90% {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(0);
   }
 }
+
 .arrow-animation {
-  animation-name: run;
-  animation-duration: 5s;
+  animation: run;
+  animation-duration: 4s;
   animation-direction: normal;
   animation-iteration-count: infinite;
 }

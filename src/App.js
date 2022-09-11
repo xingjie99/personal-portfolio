@@ -4,10 +4,10 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    // <div className="bg-[url('./assets/dark-space.jpg')] bg-cover bg-scroll">
     <div className="h-[100%] background-colour">
       <Navbar />
       <Home />
@@ -15,6 +15,7 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

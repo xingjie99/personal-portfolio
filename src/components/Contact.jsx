@@ -3,6 +3,7 @@ import Arrow from "../assets/arrow.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
+import Resume from "../assets/Tan Xing Jie - CV.pdf";
 
 const Contact = () => {
   return (
@@ -10,12 +11,14 @@ const Contact = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="grid sm:grid-cols-2 gap-10">
           <div className=" flex flex-col pt-10">
-            <p className="text-6xl font-bold inline border-b-4  border-[#3b8399]">Contact</p>
+            <div>
+              <p className="text-6xl font-bold inline border-b-4  border-[#3b8399]">Contact</p>
+            </div>
             <p className="py-10 text-lg">Here are the different ways you can reach out to me!</p>
           </div>
-          <div className="arrow-animation">
+          <div className="flex items-center">
             <img
-              className="w-[70%] h-[70%] mr-[10%] hidden lg:flex xl:w-[100%] arrow-animation "
+              className="w-[70%] h-[70%] mr-[10%] hidden lg:flex xl:w-[100%] arrow-animation"
               src={Arrow}
               alt="arrow image"
             />
@@ -27,6 +30,7 @@ const Contact = () => {
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
                   href="https://www.linkedin.com/in/tan-xing-jie-344268220/"
+                  target="_blank"
                 >
                   <FaLinkedin size={30} />
                   Linkedin
@@ -36,6 +40,7 @@ const Contact = () => {
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
                   href="https://github.com/xingjie99"
+                  target="_blank"
                 >
                   <FaGithub size={30} />
                   Github
@@ -44,7 +49,7 @@ const Contact = () => {
               <li className="w-[150px] h-[60px] flex bg-[#565f69]">
                 <a
                   className="flex justify-between items-center w-full text-gray-300"
-                  href="/"
+                  href={Resume}
                   download
                 >
                   <BsFillPersonLinesFill size={30} />

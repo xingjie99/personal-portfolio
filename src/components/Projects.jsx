@@ -28,7 +28,7 @@ const Projects = () => {
           <ProjectItem
             backgroundImage={PortfolioImg}
             name="Portfolio"
-            demoLink="www.google.com"
+            demoLink="https://xingjie-portfolio.netlify.app/"
             repoLink="https://github.com/xingjie99/personal-portfolio"
           />
           <ProjectItem
